@@ -1,0 +1,184 @@
+/* Feuille de style CSS */
+
+@font-face {
+    font-family: "UnifrakturMaguntia-Regular";
+    src: url("fonts/UnifrakturMaguntia-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Schoolbell";
+    src: url("fonts/Schoolbell-Regular.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0.2em;
+    color: #d1d1d1;
+    text-align: center;
+}
+
+
+h1 {
+    padding-top: 1em;
+    font-family: UnifrakturMaguntia-Regular, serif;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: UnifrakturMaguntia-Regular, serif;
+}
+
+h3 {
+    padding: 1.5em 0;
+    font-family: Schoolbell, serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    text-align: center;
+    margin: 1em 3em;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+th {
+    font-family: Schoolbell, serif;
+    padding-bottom: 1em;
+    color: darkred;
+}
+
+td {
+    padding: 0.5em;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: darkred;
+}
+
+input {
+    margin: 0.8em 0;
+    padding: 0.5em;
+}
+
+/* HEADER */
+.header {
+    background-color: black;
+    border-bottom: white solid 1px;
+}
+
+.header__wrapper {
+    padding: 1em;
+}
+
+.header__nav__list__item {
+
+}
+
+
+/* MAIN */
+
+.main {
+    background-color: black;
+}
+
+.main__wrapper:last-child {
+    padding-bottom: 2em;
+}
+
+.main__container__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__container__list__item {
+    max-width: 40%;
+    margin: 0;
+}
+
+.main__container__list__item__image {
+    min-height: 100%;
+
+    object-fit: cover;
+}
+
+/* FOOTER */
+.footer__nav__list__item__link:hover {
+    background-color: black !important;
+    color: white;
+}
+
+/* NAV & LINK */
+.nav-link {
+    border: white solid 1px;
+    display: block;
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding: 1em;
+
+}
+
+.img-link {
+    display: contents;
+}
+
+.main__container__list__item__image:hover {
+    transition: 2s;
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: white;
+    transition: 1s;
+}
+
+.tr-title {
+    border: white solid 1px;
+}
+
+.form__container {
+    padding: 1em;
+    display: contents;
+}
+
+.luminus {
+    color: darkred;
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 1px;
+
+}
+
